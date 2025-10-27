@@ -41,65 +41,86 @@ export function HeroSection() {
   }, [hasAnimated])
 
   return (
-    <section ref={sectionRef} className="relative min-h-screen overflow-hidden bg-black">
+    <section ref={sectionRef} className="relative min-h-screen overflow-hidden bg-gradient-to-br from-trevor-forest to-trevor-green-dark">
       <div className="absolute inset-0 z-0">
         <Image
           src="/house.png"
-          alt="수제 떡갈비"
+          alt="건강한 먹거리"
           fill
-          className="object-cover object-center"
+          className="object-cover object-center opacity-20"
           priority
           quality={75}
         />
       </div>
 
-      <div className="absolute inset-0 z-10 bg-gradient-to-br from-black/0 via-black/50 to-black/0" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-br from-trevor-forest/80 via-trevor-green/60 to-transparent" />
 
       <div className="relative z-20 min-h-screen flex items-center justify-center py-20 px-4 sm:py-24 pb-28 sm:pb-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="max-w-6xl mx-auto text-center">
             <div className="mb-8 sm:mb-12 flex justify-center animate-fadeIn">
               <div className="relative">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-accent rounded-sm rotate-45 shadow-2xl shadow-accent/40" />
+                <Image
+                  src="/trevor_logo.png"
+                  alt="Trevor Korea"
+                  width={200}
+                  height={100}
+                  className="h-16 sm:h-24 w-auto drop-shadow-2xl"
+                  priority
+                />
               </div>
             </div>
 
             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 sm:mb-14 text-balance leading-[1.1] sm:leading-[1.05] px-2 animate-fadeIn-delay-1">
-              <span className="block text-white drop-shadow-2xl mb-2 sm:mb-3 tracking-tight">전통시장 떡갈비 명가의 진심을,</span>
-              <span className="block gold-accent text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter">
-                프리미엄 브랜드로
+              <span className="block text-white drop-shadow-2xl mb-2 sm:mb-3 tracking-tight">자연의 재료로, 정직한 한 끼를</span>
+              <span className="block text-white text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter" style={{
+                textShadow: '0 0 30px rgba(168, 230, 184, 0.8), 0 0 60px rgba(168, 230, 184, 0.5), 0 4px 20px rgba(0, 0, 0, 0.8)'
+              }}>
+                모두가 건강한 음식을 먹는 그날까지
               </span>
             </h1>
 
             <div className="space-y-4 sm:space-y-7 mb-12 sm:mb-20 max-w-4xl mx-auto px-4 animate-fadeIn-delay-2">
-              <p className="text-base sm:text-xl lg:text-2xl text-white font-semibold leading-relaxed tracking-tight">
-                '용철이떡갈비'의 전통과 '자연곳간' 외식 운영 노하우가 결합된
+              <p className="text-base sm:text-xl lg:text-2xl text-white font-semibold leading-relaxed tracking-tight drop-shadow-lg">
+                "내 가족, 내 아이가 먹는다는 마음으로" 음식을 만듭니다
                 <br />
-                온·오프라인 식품 전문 브랜드 "자연애곳간"
+                건강한 프리미엄 먹거리 전문 브랜드 <span className="font-black" style={{
+                  color: '#a8e6b8',
+                  textShadow: '0 0 20px rgba(168, 230, 184, 0.6)'
+                }}>트레버코리아</span>
               </p>
-              <p className="text-sm sm:text-base lg:text-lg text-white/80 leading-relaxed">
-                내 가족, 내 아이가 먹는다는 마음으로 만드는 건강한 한 끼
+              <p className="text-sm sm:text-base lg:text-lg text-white/95 leading-relaxed drop-shadow-md">
+                대기업들이 사용하는 정제된 설탕, 아질산나트륨, 색소 등 해로운 성분을 철저히 배제합니다
               </p>
             </div>
 
             <div className="grid grid-cols-3 gap-3 sm:gap-5 lg:gap-8 mb-12 sm:mb-20 max-w-4xl mx-auto px-2 animate-fadeIn-delay-3">
-              <div className="text-center bg-white/10 p-4 sm:p-8 lg:p-10 rounded-xl sm:rounded-2xl border-2 border-white/20">
-                <div className="text-2xl sm:text-4xl lg:text-5xl font-black gold-accent mb-2 sm:mb-4 tabular-nums">
+              <div className="text-center bg-white/20 backdrop-blur-md p-4 sm:p-8 lg:p-10 rounded-xl sm:rounded-2xl border-2 border-white/40 hover:border-white/60 transition-all shadow-xl">
+                <div className="text-2xl sm:text-4xl lg:text-5xl font-black mb-2 sm:mb-4 tabular-nums" style={{
+                  color: '#d4f4dd',
+                  textShadow: '0 2px 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(168, 230, 184, 0.4)'
+                }}>
                   {counts.orphanages}+
                 </div>
-                <div className="text-xs sm:text-sm lg:text-base text-white font-bold tracking-wider">가맹점</div>
+                <div className="text-xs sm:text-sm lg:text-base text-white font-bold tracking-wider drop-shadow-md">보육원 후원</div>
               </div>
-              <div className="text-center bg-white/10 p-4 sm:p-8 lg:p-10 rounded-xl sm:rounded-2xl border-2 border-white/20">
-                <div className="text-2xl sm:text-4xl lg:text-5xl font-black gold-accent mb-2 sm:mb-4 tabular-nums">
+              <div className="text-center bg-white/20 backdrop-blur-md p-4 sm:p-8 lg:p-10 rounded-xl sm:rounded-2xl border-2 border-white/40 hover:border-white/60 transition-all shadow-xl">
+                <div className="text-2xl sm:text-4xl lg:text-5xl font-black mb-2 sm:mb-4 tabular-nums" style={{
+                  color: '#d4f4dd',
+                  textShadow: '0 2px 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(168, 230, 184, 0.4)'
+                }}>
                   {counts.additives}
                 </div>
-                <div className="text-xs sm:text-sm lg:text-base text-white font-bold tracking-wider">유해 첨가물</div>
+                <div className="text-xs sm:text-sm lg:text-base text-white font-bold tracking-wider drop-shadow-md">유해 첨가물</div>
               </div>
-              <div className="text-center bg-white/10 p-4 sm:p-8 lg:p-10 rounded-xl sm:rounded-2xl border-2 border-white/20">
-                <div className="text-2xl sm:text-4xl lg:text-5xl font-black gold-accent mb-2 sm:mb-4 tabular-nums">
+              <div className="text-center bg-white/20 backdrop-blur-md p-4 sm:p-8 lg:p-10 rounded-xl sm:rounded-2xl border-2 border-white/40 hover:border-white/60 transition-all shadow-xl">
+                <div className="text-2xl sm:text-4xl lg:text-5xl font-black mb-2 sm:mb-4 tabular-nums" style={{
+                  color: '#d4f4dd',
+                  textShadow: '0 2px 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(168, 230, 184, 0.4)'
+                }}>
                   {counts.handmade}%
                 </div>
-                <div className="text-xs sm:text-sm lg:text-base text-white font-bold tracking-wider">국내산</div>
+                <div className="text-xs sm:text-sm lg:text-base text-white font-bold tracking-wider drop-shadow-md">국내산</div>
               </div>
             </div>
 

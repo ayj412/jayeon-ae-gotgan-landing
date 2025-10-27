@@ -4,52 +4,52 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Refined Korean traditional color palette with warmer, more sophisticated tones */
-  --background: oklch(0.985 0.008 75);
-  --foreground: oklch(0.18 0.012 25);
-  --card: oklch(0.99 0.005 75);
-  --card-foreground: oklch(0.18 0.012 25);
-  --popover: oklch(0.99 0.005 75);
-  --popover-foreground: oklch(0.18 0.012 25);
-  --primary: oklch(0.22 0.015 25);
-  --primary-foreground: oklch(0.985 0.008 75);
-  --secondary: oklch(0.94 0.01 75);
-  --secondary-foreground: oklch(0.22 0.015 25);
-  --muted: oklch(0.95 0.008 75);
-  --muted-foreground: oklch(0.48 0.012 25);
-  --accent: oklch(0.48 0.22 25);
-  --accent-foreground: oklch(0.985 0.008 75);
+  /* Trevor Korea Green Theme - Natural & Fresh */
+  --background: oklch(0.98 0.01 140);
+  --foreground: oklch(0.22 0.02 150);
+  --card: oklch(0.99 0.005 140);
+  --card-foreground: oklch(0.22 0.02 150);
+  --popover: oklch(0.99 0.005 140);
+  --popover-foreground: oklch(0.22 0.02 150);
+  --primary: oklch(0.45 0.12 165);
+  --primary-foreground: oklch(0.98 0.01 140);
+  --secondary: oklch(0.92 0.03 145);
+  --secondary-foreground: oklch(0.30 0.08 160);
+  --muted: oklch(0.94 0.02 145);
+  --muted-foreground: oklch(0.50 0.06 155);
+  --accent: oklch(0.52 0.14 165);
+  --accent-foreground: oklch(0.98 0.01 140);
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0.008 75);
-  --border: oklch(0.9 0.01 75);
-  --input: oklch(0.9 0.01 75);
-  --ring: oklch(0.48 0.22 25);
-  --chart-1: oklch(0.48 0.22 25);
-  --chart-2: oklch(0.38 0.15 30);
-  --chart-3: oklch(0.58 0.18 20);
-  --chart-4: oklch(0.68 0.12 35);
-  --chart-5: oklch(0.78 0.1 40);
+  --destructive-foreground: oklch(0.98 0.01 140);
+  --border: oklch(0.88 0.03 145);
+  --input: oklch(0.88 0.03 145);
+  --ring: oklch(0.52 0.14 165);
+  --chart-1: oklch(0.52 0.14 165);
+  --chart-2: oklch(0.42 0.12 170);
+  --chart-3: oklch(0.62 0.10 160);
+  --chart-4: oklch(0.72 0.08 155);
+  --chart-5: oklch(0.82 0.06 150);
   --radius: 0.5rem;
-  --sidebar: oklch(0.985 0.008 75);
-  --sidebar-foreground: oklch(0.18 0.012 25);
-  --sidebar-primary: oklch(0.22 0.015 25);
-  --sidebar-primary-foreground: oklch(0.985 0.008 75);
-  --sidebar-accent: oklch(0.94 0.01 75);
-  --sidebar-accent-foreground: oklch(0.22 0.015 25);
-  --sidebar-border: oklch(0.9 0.01 75);
-  --sidebar-ring: oklch(0.48 0.22 25);
+  --sidebar: oklch(0.98 0.01 140);
+  --sidebar-foreground: oklch(0.22 0.02 150);
+  --sidebar-primary: oklch(0.45 0.12 165);
+  --sidebar-primary-foreground: oklch(0.98 0.01 140);
+  --sidebar-accent: oklch(0.92 0.03 145);
+  --sidebar-accent-foreground: oklch(0.30 0.08 160);
+  --sidebar-border: oklch(0.88 0.03 145);
+  --sidebar-ring: oklch(0.52 0.14 165);
 
-  /* Korean Traditional Colors (Dancheong & Obangsaek) */
-  --korean-red: oklch(0.52 0.24 22);        /* 단청 적색 - 붉은 주홍 */
-  --korean-blue: oklch(0.45 0.15 250);      /* 단청 청색 - 진한 청록 */
-  --korean-yellow: oklch(0.75 0.15 85);     /* 단청 황색 - 고운 황금빛 */
-  --korean-green: oklch(0.55 0.12 155);     /* 단청 녹색 - 차분한 초록 */
-  --korean-white: oklch(0.97 0.01 90);      /* 단청 백색 - 따뜻한 백색 */
-  --korean-black: oklch(0.25 0.01 30);      /* 단청 흑색 - 깊은 먹색 */
-  --korean-gold: oklch(0.70 0.16 75);       /* 금박 - 은은한 금빛 */
-  --korean-ink: oklch(0.30 0.02 280);       /* 수묵 - 먹물 색 */
-  --korean-celadon: oklch(0.68 0.08 165);   /* 청자색 - 고려청자 */
-  --korean-crimson: oklch(0.45 0.20 15);    /* 진홍 - 전통 비단색 */
+  /* Trevor Korea Brand Colors - Green & Natural Tones */
+  --trevor-green: oklch(0.52 0.14 165);       /* Trevor 메인 그린 */
+  --trevor-green-light: oklch(0.70 0.12 165); /* 밝은 그린 */
+  --trevor-green-dark: oklch(0.40 0.15 170);  /* 진한 그린 */
+  --trevor-mint: oklch(0.75 0.10 160);        /* 민트 그린 */
+  --trevor-sage: oklch(0.58 0.08 155);        /* 세이지 그린 */
+  --trevor-forest: oklch(0.35 0.12 165);      /* 포레스트 그린 */
+  --trevor-leaf: oklch(0.85 0.08 150);        /* 연한 잎새 색 */
+  --nature-cream: oklch(0.95 0.02 85);        /* 자연 크림색 */
+  --earth-brown: oklch(0.45 0.08 60);         /* 흙빛 브라운 */
+  --fresh-white: oklch(0.98 0.01 140);        /* 신선한 화이트 */
 }
 
 .dark {
@@ -315,13 +315,13 @@ html {
   background-position: bottom;
 }
 
-/* Gold Leaf Effect */
+/* Green Accent Effect - Trevor Korea Style */
 .gold-accent {
-  background: linear-gradient(135deg, var(--korean-gold) 0%, var(--korean-yellow) 100%);
+  background: linear-gradient(135deg, var(--trevor-leaf) 0%, #a8e6b8 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 2px 8px rgba(218, 165, 32, 0.3));
+  filter: drop-shadow(0 2px 8px rgba(168, 230, 184, 0.6));
 }
 
 /* Ink Brush Stroke Effect */
@@ -354,13 +354,13 @@ html {
     0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Luxury Gradient with Korean Colors */
+/* Natural Gradient - Trevor Korea Style */
 .korean-luxury-gradient {
   background: linear-gradient(
     135deg,
-    var(--korean-crimson) 0%,
-    var(--korean-red) 50%,
-    var(--korean-gold) 100%
+    var(--trevor-forest) 0%,
+    var(--trevor-green) 50%,
+    var(--trevor-green-light) 100%
   );
 }
 

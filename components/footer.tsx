@@ -21,8 +21,8 @@ const YoutubeIcon = () => (
 
 export function Footer() {
   return (
-    <footer className="relative bg-card border-t-2 border-border overflow-hidden">
-      <div className="dancheong-pattern absolute top-0 left-0 right-0 h-2 opacity-60" />
+    <footer className="relative bg-card border-t-2 border-trevor-green/30 overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-trevor-forest via-trevor-green to-trevor-green-light opacity-80" />
       <div className="hanji-texture absolute inset-0 opacity-50" />
       <div className="cloud-pattern absolute inset-0 opacity-30" />
 
@@ -30,12 +30,12 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <Image src="/logo.png" alt="자연애곳간" width={160} height={53} className="h-12 w-auto mb-6" />
+            <Image src="/trevor_logo.png" alt="Trevor Korea" width={160} height={80} className="h-10 w-auto mb-6" />
             <p className="text-sm text-muted-foreground leading-relaxed mb-6 font-medium">
-              <span className="gold-accent text-base font-bold block mb-2">전통의 품격</span>
-              전통의 맛을 지키는 자연애곳간입니다.
+              <span className="gold-accent text-base font-bold block mb-2">자연의 재료로, 정직한 한 끼를</span>
+              "내 가족, 내 아이가 먹는다는 마음으로" 음식을 만듭니다.
               <br />
-              건강한 한식으로 행복을 전합니다.
+              건강한 프리미엄 먹거리로 모두의 건강을 지킵니다.
             </p>
             <div className="flex gap-3">
               <Link
@@ -123,18 +123,18 @@ export function Footer() {
           </div>
 
           <div className="text-sm text-muted-foreground space-y-2 mt-4">
-            <p className="font-semibold">상호명: (주)자연애곳간 | 대표: 홍길동</p>
-            <p>사업자등록번호: 123-45-67890 | 식품제조허가: 제2024-0000호</p>
-            <p>주소: 서울특별시 강남구 테헤란로 123</p>
-            <p>전화: <span className="text-accent font-semibold">1588-0000</span> | 이메일: <span className="text-accent">franchise@jayeonae.com</span></p>
+            <p className="font-semibold">상호명: (주)에이치피푸드코리아 | 대표: 박갑철</p>
+            <p>사업자등록번호: 226-86-02792 | HACCP 인증제조시설</p>
+            <p>주소: 울산 남구 번영로124번길21, 2층 210-2호</p>
+            <p>전화: <span className="text-trevor-green font-semibold">1588-0000</span> | 이메일: <span className="text-trevor-green">info@hpfoodkorea.com</span></p>
           </div>
 
           <div className="mt-6 pt-6 border-t border-border/30 text-center">
             <p className="text-sm text-muted-foreground font-medium">
-              © 2025 자연애곳간. All rights reserved.
+              © 2025 Trevor Korea (HP FOOD KOREA). All rights reserved.
             </p>
             <p className="text-xs text-muted-foreground mt-2 gold-accent">
-              정성으로 빚은 전통, 신뢰로 쌓은 미래
+              모두가 건강한 음식을 먹는 그날까지
             </p>
           </div>
         </div>

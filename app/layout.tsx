@@ -11,9 +11,9 @@ const notoSerifKR = Noto_Serif_KR({
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "자연애곳간 가맹점 모집 | 전통의 맛, 건강한 한식",
+  title: "Trevor Korea | 건강한 프리미엄 먹거리 전문 브랜드",
   description:
-    "200번 손으로 치대는 정성, 48시간 이내 도축 한우·한돈으로 만든 수제 떡갈비. 자연애곳간 가맹점을 모집합니다.",
+    "내 가족, 내 아이가 먹는다는 마음으로 만드는 건강한 먹거리. 유해 첨가물 제로, 국내산 한우·한돈 100%, HACCP 인증. 트레버코리아",
   generator: "v0.app",
 }
 

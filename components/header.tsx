@@ -21,12 +21,12 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/20 bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80 shadow-sm">
-      <div className="dancheong-pattern absolute top-0 left-0 right-0 h-1 opacity-60" />
+    <header className="sticky top-0 z-50 w-full border-b border-trevor-green/20 bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80 shadow-sm">
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-trevor-forest via-trevor-green to-trevor-green-light opacity-80" />
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center">
-            <Image src="/logo.png" alt="자연애곳간" width={180} height={60} className="h-14 w-auto" priority />
+            <Image src="/trevor_logo.png" alt="Trevor Korea" width={180} height={80} className="h-12 w-auto" priority />
           </Link>
 
           {/* Desktop Navigation */}
